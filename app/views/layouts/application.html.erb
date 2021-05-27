@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= full_title yield(:title) %>></title>
+    <title><%= full_title yield(:title) %></title>
     <meta charset = "utf-8">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -10,8 +10,12 @@
   </head>
 
   <body>
-    <%= link_to t(".en"), locale: :en %>
-    <%= link_to t(".vi"), locale: :vi %>
-    <%= yield %>
+    <%= render "layouts/header" %>
+    <div class="container">
+      <%= link_to t(".en"), locale: :en %>
+      <%= link_to t(".vi"), locale: :vi %>
+      <%= yield %>
+      <%= render "layouts/footer" %>
+    </div>
   </body>
 </html>

@@ -1,8 +1,7 @@
-# This is rubocop configuration file for Sun-Asterisk's coding style. Enabling and disabling is configured
+AllCops:
+  TargetRubyVersion: 3.0.1
+# This is rubocop configuration file for Framgia's coding style. Enabling and disabling is configured
 # in separate files. This file adds all other parameters apart from Enabled.
-
-# Add this to load Rails extension for rubocop
-require: rubocop-rails
 
 # Put the following files into the same directory as this file.
 inherit_from:
@@ -13,24 +12,15 @@ inherit_from:
 AllCops:
   # Include gemspec and Rakefile
   Include:
-    - 'app/**/*'
-    - 'lib/**/*'
     - '**/*.gemspec'
-    - 'Gemfile'
   Exclude:
     - 'vendor/**/*'
-    - 'config/unicorn.rb'
     - 'bin/*'
     - 'db/**/*'
     - 'spec/**/*'
     - 'script/rails'
     - 'config/**/*'
-    - 'app/views/**/*'
-    - 'app/assets/**/*'
-    - 'app/javascript/**/*'
-    - '.idea/**/*'
-    - '**/.DS_Store'
-    - '**/.keep'
+    - 'gkc_util_hashcode_script.rb'
 
 # Indent private/protected/public as deep as method definitions
 Layout/AccessModifierIndentation:
@@ -175,6 +165,10 @@ Metrics/ClassLength:
   CountComments: false  # count full line comments?
   Max: 100
 
+Metrics/ModuleLength:
+  CountComments: false  # count full line comments?
+  Max: 150
+
 # Align with the style guide.
 Style/CollectionMethods:
   # Mapping from undesired method to desired_method
@@ -268,7 +262,7 @@ Style/HashSyntax:
     - hash_rockets
 
 # Checks the indentation of the first key in a hash literal.
-Layout/IndentFirstHashElement:
+Layout/IndentHash:
   # The value `special_inside_parentheses` means that hash literals with braces
   # that have their opening brace on the same line as a surrounding opening
   # round parenthesis, shall have their first key indented relative to the
@@ -288,7 +282,7 @@ Style/LambdaCall:
     - braces
 
 Metrics/LineLength:
-  Max: 80
+  Max: 120
   AllowURI: true
   Exclude:
     - config/routes.rb
@@ -354,6 +348,7 @@ Style/PercentLiteralDelimiters:
 Naming/PredicateName:
   NamePrefixBlacklist:
     - get_
+    - set_
 
 Style/RaiseArgs:
   EnforcedStyle: exploded
