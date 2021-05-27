@@ -1,10 +1,22 @@
 vi:
-  title: "Ruby on Rails Tutorial Sample App"
+  title: "Hướng dẫn Rails Sample App"
   layouts:
     application:
       title: "Hướng dẫn Ruby on Rails Sample App"
       en: "Tiếng Anh"
-      vi: "Tiếng Viet"
+      vi: "Tiếng Việt"
+    footer:
+      text: "The"
+      text1: "by"
+      about_text: "Xem Thêm"
+      contact_text: "Liên Hệ"
+      path_text1: "Ruby on Rails Tutorial"
+      path_text2: "Michael Hartl"
+      path_text3: "Tin Tức"
+    header:
+      home_text: "Trang Chủ"
+      help_text: "Trợ giúp"
+      log_text: "Đăng Nhập"
   static_pages:
     home:
       subtitle: "Trang chủ"
@@ -27,3 +39,10 @@ vi:
       end_text2: "sẽ là nguồn sách giúp đỡ bạn"
       path_text3: "Đọc thêm về Rails tại"
       end_text3: "đây là ứng dụng Sample"
+    contact:
+      subtitle: "Liên Hệ"
+      text: "Liên hệ với Ruby on Rails"
+      path_text: "Trang liên hệ"
+  users:
+    new:
+      subtitle: "Đăng ký"

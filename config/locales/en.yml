@@ -5,6 +5,18 @@ en:
       title: "Ruby on Rails Tutorial Sample App"
       en: "English"
       vi: "Vietnamese"
+    footer:
+      text: "The"
+      text1: "by"
+      about_text: "About"
+      contact_text: "Contact"
+      path_text1: "Ruby on Rails Tutorial"
+      path_text2: "Michael Hartl"
+      path_text3: "News"
+    header:
+      home_text: "Home"
+      help_text: "Help"
+      log_text: "Login"
   static_pages:
     home:
       subtitle: "Home"
@@ -12,7 +24,7 @@ en:
       path_text: "Ruby on Rails Tutorial"
       text: "sample application"
     help:
-      subtitle: "Home"
+      subtitle: "Help"
       page_text: "Get help on the Ruby on Rails Tutorial at the"
       path_text: "Ruby on Rails Tutorial"
       text: "To get help on this sample app, see the"
@@ -27,3 +39,10 @@ en:
       end_text2: "will help you coming the developt Ruby on Rails"
       path_text3: "Read more about Rails on"
       end_text3: "this is Sample App"
+    contact:
+      subtitle: "Contact"
+      text: "Contact with Ruby on Rails"
+      path_text: "Contact page"
+  users:
+    new:
+      subtitle: "Sign Up"
