@@ -14,6 +14,7 @@ gem "rails-i18n"
 gem "sassc-rails", ">= 2.1.0"
 gem "bootstrap-sass", "~> 3.4.1"
 gem "config"
+gem "bcrypt", "3.1.13"
 gem "bootsnap", ">= 1.4.4", require: false
 
 group :development, :test do
