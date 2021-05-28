@@ -189,9 +189,9 @@ Naming/FileName:
   Description: "Use snake_case for source file names."
   Enabled: true
 
-Lint/FlipFlop:
-  Description: "Checks for flip flops"
-  Enabled: true
+# Style/FlipFlop:
+#   Description: "Checks for flip flops"
+#   Enabled: true
 
 Style/For:
   Description: "Checks use of for or each in multiline loops."
@@ -233,15 +233,15 @@ Layout/IndentationWidth:
   Description: "Use 2 spaces for indentation."
   Enabled: true
 
-Layout/IndentFirstArrayElement:
-  Description: >-
-                 Checks the indentation of the first element in an array
-                 literal.
-  Enabled: true
+# Layout/IndentArray:
+#   Description: >-
+#                  Checks the indentation of the first element in an array
+#                  literal.
+#   Enabled: true
 
-Layout/IndentFirstHashElement:
-  Description: "Checks the indentation of the first key in a hash literal."
-  Enabled: true
+# Layout/IndentHash:
+#   Description: "Checks the indentation of the first key in a hash literal."
+#   Enabled: true
 
 Style/Lambda:
   Description: "Use the new lambda literal syntax for single-line blocks."
@@ -262,7 +262,7 @@ Style/LineEndConcatenation:
   Enabled: true
 
 Metrics/LineLength:
-  Description: "Limit lines to 80 characters."
+  Description: "Limit lines to 120 characters."
   Enabled: true
 
 Style/MethodCallWithoutArgsParentheses:
@@ -417,10 +417,10 @@ Style/SingleLineMethods:
   Description: "Avoid single-line methods."
   Enabled: true
 
-Layout/SpaceBeforeFirstArg:
-  Description: >-
-                 Checks that exactly one space is used between a method name
-                 and the first argument for method calls without parentheses.
+# Layout/SpaceBeforeFirstArg:
+#   Description: >-
+#                  Checks that exactly one space is used between a method name
+#                  and the first argument for method calls without parentheses.
   Enabled: true
 
 Layout/SpaceAfterColon:
@@ -431,9 +431,9 @@ Layout/SpaceAfterComma:
   Description: "Use spaces after commas."
   Enabled: true
 
-Layout/SpaceAroundKeyword:
-  Description: "Use spaces after if/elsif/unless/while/until/case/when."
-  Enabled: true
+# Layout/SpaceAroundKeyword:
+#   Description: "Use spaces after if/elsif/unless/while/until/case/when."
+#   Enabled: true
 
 Layout/SpaceAfterMethodName:
   Description: >-
@@ -485,6 +485,10 @@ Layout/SpaceAroundEqualsInParameterDefault:
 
 Layout/SpaceAroundOperators:
   Description: "Use spaces around operators."
+  Enabled: true
+
+Layout/SpaceAroundKeyword:
+  Description: "Put a space before the modifier keyword."
   Enabled: true
 
 Layout/SpaceInsideHashLiteralBraces:
@@ -555,6 +559,10 @@ Style/VariableInterpolation:
 
 Naming/VariableName:
   Description: "Use the configured style when naming variables."
+  Enabled: true
+
+Naming/AccessorMethodName:
+  Description: Check the naming of accessor methods for get_/set_.
   Enabled: true
 
 Style/WhenThen:
@@ -672,6 +680,12 @@ Lint/ShadowingOuterLocalVariable:
   Description: >-
                  Do not use the same name as outer local variable
                  for block arguments or block local variables.
+  Enabled: true
+
+Layout/SpaceBeforeFirstArg:
+  Description: >-
+                 Put a space between a method name and the first argument
+                 in a method call without parentheses.
   Enabled: true
 
 Lint/StringConversionInInterpolation:

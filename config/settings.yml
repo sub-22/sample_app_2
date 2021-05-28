@@ -1,5 +1,6 @@
 home:
   path_link: "https://www.railstutorial.org/"
+  path_img: "rails.jpg"
 help:
   path_link: "https://www.railstutorial.org/help"
   path_link2: "https://www.railstutorial.org/book"
@@ -8,3 +9,9 @@ about:
   path_link1: "https://www.railstutorial.org/book"
   path_link2: "https://www.railstutorial.org/help"
   path_link3: "https://rubyonrails.org/"
+contact:
+  path_link: "https://www.railstutorial.org/contact"
+footer:
+  path_link1: "https://www.railstutorial.org/"
+  path_link2: "https://www.michaelhartl.com/"
+  path_link3: "https://news.railstutorial.org/"

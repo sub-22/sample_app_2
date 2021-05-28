@@ -34,6 +34,10 @@ Style/ClassAndModuleChildren:
   Description: "Checks style of children classes and modules."
   Enabled: false
 
+Style/SafeNavigation:
+  Description: "Use safe navigation (&.) for checking object exists before calling method."
+  Enabled: false
+
 Metrics/ClassLength:
   Description: "Avoid classes longer than 100 lines of code."
   Enabled: false
@@ -60,8 +64,8 @@ Style/UnneededPercentQ:
   Description: "Checks for %q/%Q when single quotes or double quotes would do."
   Enabled: false
 
-Naming/AccessorMethodName:
-  Description: Check the naming of accessor methods for get_/set_.
+Style/RedundantSelf:
+  Description: "Don't use self where it's not needed."
   Enabled: false
 
 #################### Lint ################################
@@ -70,18 +74,9 @@ Lint/AssignmentInCondition:
   Description: "Don't use assignment in conditions."
   Enabled: false
 
-Rails/HelperInstanceVariable:
-  Description: "Do not use instance variables in helpers"
-  Enabled: false
-
 Rails/InverseOf:
   Description: "Prevent fetching loaded data again through a relationship."
   Enabled: false
 
-Rails/ReflectionClassName:
-  Description: "Use a string for `class_name` option value in the definition of a reflection."
-  Enabled: false
-
 Rails/SkipsModelValidations:
   Enabled: false
-
