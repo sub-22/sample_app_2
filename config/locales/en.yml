@@ -3,7 +3,21 @@ en:
     not_found_user: "Couldn't found the user"
     success_text: "Welcome to Sample App"
     error_text: "Error For Sign Up"
+    login_fail: "Invalid Email/Password"
+    edit:
+      message_login_fail: "Hiện chưa có tài khoản đăng nhập"
+      update_done: "Thay đổi thành công"
   title: "Ruby on Rails Tutorial Sample App"
+  sessions:
+    new:
+      subtitle: "Login"
+      new_user: "New User?"
+      sign_up: "Sign Up Now!"
+      submit: "Login"
+    login:
+      label:
+        email: "Email"
+        password: "Password"
   layouts:
     application:
       title: "Ruby on Rails Tutorial Sample App"
@@ -21,7 +35,12 @@ en:
       header_text: "Sample App"
       home_text: "Home"
       help_text: "Help"
+      user_text: "Users"
+      account_text: "Account"
       log_text: "Login"
+      profile_text: "Profile"
+      settings_text: "Setting"
+      logout_text: "Log Out"
   static_pages:
     home:
       subtitle: "Home"
@@ -52,13 +71,21 @@ en:
   users:
     new:
       subtitle: "Sign Up"
-      submit: "Sign Up"
+      submit: "Create my account"
       user_text: "Your Name Here"
       path_text: "This will be signup page for new user"
+      login_text: "Already Login"
+      log_in: "Sign In Now!"
   shared:
     error_messages:
       text: "The form contain"
       error: "error"
+  signup:
+    label:
+      name: "Name"
+      email: "Email"
+      password: "Password"
+      password_confirm: "Confirm Password"
   activerecord:
     attributes:
       user:
