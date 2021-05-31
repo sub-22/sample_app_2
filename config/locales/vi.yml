@@ -4,9 +4,12 @@ vi:
     success_text: "Chào mừng tới Sample App"
     error_text: " Đăng Ký Thất Bại"
     login_fail: "Sai tên Email/Mật Khẩu"
+<<<<<<< HEAD
     edit:
       message_login_fail: "Hiện chưa có tài khoản đăng nhập"
       update_done: "Thay đổi thành công"
+=======
+>>>>>>> 8eddf8e (Chapter8: Basic Login)
   title: "Hướng dẫn Rails Sample App"
   sessions:
     new:
@@ -14,11 +17,14 @@ vi:
       new_user: "Nếu chưa có tài khoản?"
       sign_up: "Đăng Ký Ngay"
       submit: "Đăng Nhập"
+<<<<<<< HEAD
     login:
       label:
         email: "Email"
         password: "Mật Khẩu"
         remember_me: "Ghi nhớ tài khoản"
+=======
+>>>>>>> 8eddf8e (Chapter8: Basic Login)
   layouts:
     application:
       title: "Hướng dẫn Ruby on Rails Sample App"
@@ -72,12 +78,16 @@ vi:
   users:
     new:
       subtitle: "Đăng ký"
+<<<<<<< HEAD
       create_text: "Tạo tài khoản mới"
+=======
+>>>>>>> 8eddf8e (Chapter8: Basic Login)
       submit: "Tạo mới tài khoản"
       user_text: "Tên"
       path_text: "Là trang để đăng ký người dùng mới"
       login_text: "Nếu đã có tài khoản"
       log_in: "Đăng Nhập Ngay!"
+<<<<<<< HEAD
       all_user: "Tất cả người dùng"
     label:
       name: "Tên"
@@ -88,6 +98,8 @@ vi:
       subtitle_edit: "Sửa thông tin"
       save_text: "Lưu thay đổi"
       avatar_change: "Chọn"
+=======
+>>>>>>> 8eddf8e (Chapter8: Basic Login)
   shared:
     error_messages:
       text: "Biểu mấu có"
