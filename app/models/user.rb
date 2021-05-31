@@ -9,7 +9,7 @@ class User < ApplicationRecord
     length: {maximum: Settings.user.validate.size.email},
     format: {with: VALID_EMAIL_REGEX}, uniqueness: true
   validates :password, presence: true,
-    length: {minimum: Settings.user.validate.size.pass}
+    length: {minimum: Settings.user.validate.size.pass}, allow_nil: true
 
   has_secure_password
 
@@ -20,7 +20,7 @@ class User < ApplicationRecord
       cost = if ActiveModel::SecurePassword.min_cost
               BCrypt::Engine::MIN_COST
             else
-              BCrypt::ENGINE.cost
+              BCrypt::Engine.cost
             end
       BCrypt::Password.create string, cost: cost
     end
