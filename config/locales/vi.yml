@@ -1,4 +1,8 @@
 vi:
+  global:
+    not_found_user: "Không thể tìm thấy người dùng"
+    success_text: "Chào mừng tới Sample App"
+    error_text: " Đăng Ký Thất Bại"
   title: "Hướng dẫn Rails Sample App"
   layouts:
     application:
@@ -48,5 +52,16 @@ vi:
   users:
     new:
       subtitle: "Đăng ký"
+      submit: "Đăng Ký"
       user_text: "Tên"
       path_text: "Là trang để đăng ký người dùng mới"
+  shared:
+    error_messages:
+      text: "Biểu mấu có"
+      error: "lỗi"
+  activerecord:
+    attributes:
+      user:
+        name: "Tên"
+        password: "Mật Khẩu"
+        password_confirmation: "Xác nhận mật khẩu"

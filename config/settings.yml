@@ -23,3 +23,5 @@ user:
       pass: 8
     format:
       email: !ruby/regexp '/\A[\w+\-.]+@[a-z\d\-]+(\.[a-z\d\-]+)*\.[a-z]+\z/i'
+users_helper:
+  size: 80
