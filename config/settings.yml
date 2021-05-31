@@ -15,3 +15,11 @@ footer:
   path_link1: "https://www.railstutorial.org/"
   path_link2: "https://www.michaelhartl.com/"
   path_link3: "https://news.railstutorial.org/"
+user:
+  validate:
+    size:
+      name: 50
+      email: 255
+      pass: 8
+    format:
+      email: !ruby/regexp '/\A[\w+\-.]+@[a-z\d\-]+(\.[a-z\d\-]+)*\.[a-z]+\z/i'
