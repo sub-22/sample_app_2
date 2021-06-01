@@ -5,30 +5,16 @@
       <ul class="nav navbar-nav navbar-right">
         <li><%= link_to t(".home_text"), root_path %></li>
         <li><%= link_to t(".help_text"), help_path %></li>
-<<<<<<< HEAD
         <% if logged_in? %>
-          <li><%= link_to t(".user_text"), "#" %></li>
+          <li><%= link_to t(".user_text"), users_path %></li>
           <li class="dropdown">
             <%= link_to "#", class: "dropdown-toggle", "data-toggle": "dropdown" do %>
               <%= current_user.name %>
               <b class="caret"></b>
             <% end %>
-=======
-        <% if logged_in?%>
-          <li><%= link_to t(".user_text"), "#" %></li>
-          <li class="dropdown">
-            <%= link_to "#", class: "dropdown-toggle", "data-toggle": "dropdown" do %>
-              <%= current_user.name %>
-              <b class="caret"></b>
-<<<<<<< HEAD
-            </a>
->>>>>>> 8eddf8e (Chapter8: Basic Login)
-=======
-            <% end %>
->>>>>>> 4f88919 (Chapter9: Advanced login)
             <ul class="dropdown-menu">
               <li><%= link_to t(".profile_text"), current_user %></li>
-              <li><%= link_to t(".settings_text"), "#" %></li>
+              <li><%= link_to t(".settings_text"), edit_user_path(@current_user) %></li>
               <li class="divider"></li>
               <li>
                 <%= link_to t(".logout_text"), logout_path, method: :delete %>
@@ -36,11 +22,7 @@
             </ul>
           </li>
         <% else %>
-<<<<<<< HEAD
           <li><%= link_to t(".log_text"), login_path %></li>
-=======
-        <li><%= link_to t(".log_text"), login_path %></li>
->>>>>>> 8eddf8e (Chapter8: Basic Login)
         <% end %>
       </ul>
     </nav>
