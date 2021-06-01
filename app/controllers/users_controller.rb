@@ -14,7 +14,11 @@ class UsersController < ApplicationController
   def create
     @user = User.new user_params
     if @user.save
+<<<<<<< HEAD
       log_in @user
+=======
+      login @user
+>>>>>>> 4f88919 (Chapter9: Advanced login)
       flash[:success] = t "global.success_text"
       redirect_to @user
     else

@@ -17,11 +17,15 @@
         <% if logged_in?%>
           <li><%= link_to t(".user_text"), "#" %></li>
           <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <% t ".account_text" %>
+            <%= link_to "#", class: "dropdown-toggle", "data-toggle": "dropdown" do %>
+              <%= current_user.name %>
               <b class="caret"></b>
+<<<<<<< HEAD
             </a>
 >>>>>>> 8eddf8e (Chapter8: Basic Login)
+=======
+            <% end %>
+>>>>>>> 4f88919 (Chapter9: Advanced login)
             <ul class="dropdown-menu">
               <li><%= link_to t(".profile_text"), current_user %></li>
               <li><%= link_to t(".settings_text"), "#" %></li>

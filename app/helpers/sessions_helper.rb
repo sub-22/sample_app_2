@@ -5,6 +5,7 @@ module SessionsHelper
 
   def current_user
 <<<<<<< HEAD
+<<<<<<< HEAD
     if user_id = session[:user_id]
       @current_user ||= User.find_by id: user_id
     elsif user_id = cookies.signed[:user_id]
@@ -17,6 +18,16 @@ module SessionsHelper
     if session[:user_id]
       @current_user ||= User.find_by id: session[:user_id]
 >>>>>>> 8eddf8e (Chapter8: Basic Login)
+=======
+    if (user_id = session[:user_id])
+      @current_user ||= User.find_by id: session[:user_id]
+    elsif (user_id = cookies.signed[:user_id])
+      user = User.find_by id: cookies.signed[:user_id]
+      if user&.authenticated?(cookies[:remember_token])
+        log_in user
+        @current_user = user
+      end
+>>>>>>> 4f88919 (Chapter9: Advanced login)
     end
   end
 
@@ -26,6 +37,9 @@ module SessionsHelper
 
   def log_out
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 4f88919 (Chapter9: Advanced login)
     forget current_user
     session.delete :user_id
     @current_user = nil
@@ -42,9 +56,12 @@ module SessionsHelper
     cookies.delete :user_id
     cookies.delete :remember_token
   end
+<<<<<<< HEAD
 =======
     session.delete :user_id
     @current_user = nil
   end
 >>>>>>> 8eddf8e (Chapter8: Basic Login)
+=======
+>>>>>>> 4f88919 (Chapter9: Advanced login)
 end

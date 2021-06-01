@@ -18,6 +18,7 @@ vi:
       sign_up: "Đăng Ký Ngay"
       submit: "Đăng Nhập"
 <<<<<<< HEAD
+<<<<<<< HEAD
     login:
       label:
         email: "Email"
@@ -25,6 +26,13 @@ vi:
         remember_me: "Ghi nhớ tài khoản"
 =======
 >>>>>>> 8eddf8e (Chapter8: Basic Login)
+=======
+      check_box: "Ghi nhớ tài khoản"
+    label:
+      email: "Email"
+      password: "Mật Khẩu"
+      remember_me: "Ghi nhớ tài khoản"
+>>>>>>> 4f88919 (Chapter9: Advanced login)
   layouts:
     application:
       title: "Hướng dẫn Ruby on Rails Sample App"
@@ -88,18 +96,24 @@ vi:
       login_text: "Nếu đã có tài khoản"
       log_in: "Đăng Nhập Ngay!"
 <<<<<<< HEAD
+<<<<<<< HEAD
       all_user: "Tất cả người dùng"
+=======
+>>>>>>> 4f88919 (Chapter9: Advanced login)
     label:
       name: "Tên"
       email: "Email"
       password: "Mật khẩu"
       confirm_password: "Xác nhận mật khẩu"
+<<<<<<< HEAD
     edit:
       subtitle_edit: "Sửa thông tin"
       save_text: "Lưu thay đổi"
       avatar_change: "Chọn"
 =======
 >>>>>>> 8eddf8e (Chapter8: Basic Login)
+=======
+>>>>>>> 4f88919 (Chapter9: Advanced login)
   shared:
     error_messages:
       text: "Biểu mấu có"

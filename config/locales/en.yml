@@ -14,11 +14,19 @@ en:
       new_user: "New User?"
       sign_up: "Sign Up Now!"
       submit: "Login"
+<<<<<<< HEAD
     login:
       label:
         email: "Email"
         password: "Password"
         remember_me: "Remember me"
+=======
+      check_box: "Remember me"
+    label:
+      email: "Email"
+      password: "Password"
+      remember_me: "Remember me"
+>>>>>>> 4f88919 (Chapter9: Advanced login)
   layouts:
     application:
       title: "Ruby on Rails Tutorial Sample App"
