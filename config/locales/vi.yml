@@ -14,11 +14,11 @@ vi:
       new_user: "Nếu chưa có tài khoản?"
       sign_up: "Đăng Ký Ngay"
       submit: "Đăng Nhập"
-      check_box: "Ghi nhớ tài khoản"
-    label:
-      email: "Email"
-      password: "Mật Khẩu"
-      remember_me: "Ghi nhớ tài khoản"
+    login:
+      label:
+        email: "Email"
+        password: "Mật Khẩu"
+        remember_me: "Ghi nhớ tài khoản"
   layouts:
     application:
       title: "Hướng dẫn Ruby on Rails Sample App"

@@ -18,6 +18,7 @@ en:
       label:
         email: "Email"
         password: "Password"
+        remember_me: "Remember me"
   layouts:
     application:
       title: "Ruby on Rails Tutorial Sample App"

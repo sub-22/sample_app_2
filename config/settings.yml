@@ -15,6 +15,9 @@ footer:
   path_link1: "https://www.railstutorial.org/"
   path_link2: "https://www.michaelhartl.com/"
   path_link3: "https://news.railstutorial.org/"
+controller:
+  sessions:
+    remember: 1
 user:
   validate:
     size:
