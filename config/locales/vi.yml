@@ -3,7 +3,22 @@ vi:
     not_found_user: "Không thể tìm thấy người dùng"
     success_text: "Chào mừng tới Sample App"
     error_text: " Đăng Ký Thất Bại"
+    login_fail: "Sai tên Email/Mật Khẩu"
+    edit:
+      message_login_fail: "Hiện chưa có tài khoản đăng nhập"
+      update_done: "Thay đổi thành công"
   title: "Hướng dẫn Rails Sample App"
+  sessions:
+    new:
+      subtitle: "Đăng Nhập"
+      new_user: "Nếu chưa có tài khoản?"
+      sign_up: "Đăng Ký Ngay"
+      submit: "Đăng Nhập"
+      check_box: "Ghi nhớ tài khoản"
+    label:
+      email: "Email"
+      password: "Mật Khẩu"
+      remember_me: "Ghi nhớ tài khoản"
   layouts:
     application:
       title: "Hướng dẫn Ruby on Rails Sample App"
@@ -21,7 +36,12 @@ vi:
       header_text: "Sample App"
       home_text: "Trang Chủ"
       help_text: "Trợ giúp"
+      user_text: "Người dùng"
+      account_text: "Tài Khoản"
       log_text: "Đăng Nhập"
+      profile_text: "Thông tin"
+      settings_text: "Cài Đặt"
+      logout_text: "Đăng xuất"
   static_pages:
     home:
       subtitle: "Trang chủ"
@@ -52,13 +72,32 @@ vi:
   users:
     new:
       subtitle: "Đăng ký"
-      submit: "Đăng Ký"
+      create_text: "Tạo tài khoản mới"
+      submit: "Tạo mới tài khoản"
       user_text: "Tên"
       path_text: "Là trang để đăng ký người dùng mới"
+      login_text: "Nếu đã có tài khoản"
+      log_in: "Đăng Nhập Ngay!"
+      all_user: "Tất cả người dùng"
+    label:
+      name: "Tên"
+      email: "Email"
+      password: "Mật khẩu"
+      confirm_password: "Xác nhận mật khẩu"
+    edit:
+      subtitle_edit: "Sửa thông tin"
+      save_text: "Lưu thay đổi"
+      avatar_change: "Chọn"
   shared:
     error_messages:
       text: "Biểu mấu có"
       error: "lỗi"
+  signup:
+    label:
+      name: "Tên"
+      email: "Email"
+      password: "Mật khẩu"
+      password_confirm: "Xác nhận mật khẩu"
   activerecord:
     attributes:
       user:
