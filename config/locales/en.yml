@@ -4,9 +4,13 @@ en:
     success_text: "Welcome to Sample App"
     error_text: "Error For Sign Up"
     login_fail: "Invalid Email/Password"
+    all_user: "All User"
     edit:
-      message_login_fail: "Hiện chưa có tài khoản đăng nhập"
-      update_done: "Thay đổi thành công"
+      message_login_fail: "Not existing login user"
+      update_done: "Update successfull"
+    delete:
+      user_delete: "Delete user"
+      you_sure: "Are you sure to delete this user"
   title: "Ruby on Rails Tutorial Sample App"
   sessions:
     new:
@@ -14,6 +18,7 @@ en:
       new_user: "New User?"
       sign_up: "Sign Up Now!"
       submit: "Login"
+      check_box: "Remember me"
     login:
       label:
         email: "Email"
@@ -72,11 +77,25 @@ en:
   users:
     new:
       subtitle: "Sign Up"
+      create_text: "Create my account"
       submit: "Create my account"
       user_text: "Your Name Here"
       path_text: "This will be signup page for new user"
       login_text: "Already Login"
       log_in: "Sign In Now!"
+      all_user: "All User"
+    label:
+      name: "Name"
+      email: "Email"
+      password: "Password"
+      confirm_password: "Confirm password"
+    edit:
+      subtitle_edit: "Update your profile"
+      save_text: "Save"
+      avatar_change: "Choice"
+    noti:
+      destroy_true: "Delete successfull"
+      destroy_fail: "Delete fail"
   shared:
     error_messages:
       text: "The form contain"

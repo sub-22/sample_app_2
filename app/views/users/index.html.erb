@@ -1,0 +1,8 @@
+<% provide :title, t("global.all_user") %>
+<h1><%= t("global.all_user") %></h1>
+<ul class="users">
+  <%= render @users %>
+</ul>
+<div class="d-flex justify-content-center mt-3">
+  <%= paginate @users, theme: "twitter-bootstrap-3" %>
+</div>

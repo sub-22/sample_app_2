@@ -4,9 +4,13 @@ vi:
     success_text: "Chào mừng tới Sample App"
     error_text: " Đăng Ký Thất Bại"
     login_fail: "Sai tên Email/Mật Khẩu"
+    all_user: "Tất cả người dùng"
     edit:
       message_login_fail: "Hiện chưa có tài khoản đăng nhập"
       update_done: "Thay đổi thành công"
+    delete:
+      user_delete: "Xóa người dùng"
+      you_sure: "Bạn có muốn xóa người dùng này"
   title: "Hướng dẫn Rails Sample App"
   sessions:
     new:
@@ -14,6 +18,7 @@ vi:
       new_user: "Nếu chưa có tài khoản?"
       sign_up: "Đăng Ký Ngay"
       submit: "Đăng Nhập"
+      check_box: "Ghi nhớ tài khoản"
     login:
       label:
         email: "Email"
@@ -88,6 +93,9 @@ vi:
       subtitle_edit: "Sửa thông tin"
       save_text: "Lưu thay đổi"
       avatar_change: "Chọn"
+    noti:
+      destroy_true: "Xóa thành công"
+      destroy_fail: "Xóa thất bại"
   shared:
     error_messages:
       text: "Biểu mấu có"
