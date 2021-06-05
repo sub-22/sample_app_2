@@ -5,9 +5,14 @@ en:
     error_text: "Error For Sign Up"
     login_fail: "Invalid Email/Password"
     all_user: "All User"
+    check_activate: "Please check email to finish activate account"
+    activate_success: "Activate account successfully"
+    activate_danger: "Activate Fail"
+    not_activate: "Account not activate, check your mail"
     edit:
       message_login_fail: "Not existing login user"
       update_done: "Update successfull"
+      update_fail: "Update fail"
     delete:
       user_delete: "Delete user"
       you_sure: "Are you sure to delete this user"
@@ -112,3 +117,10 @@ en:
         name: "Name"
         password: "Password"
         password_confirmation: "Confirm password"
+  user_mailer:
+    activation:
+      title: "Activation account"
+      hello_text: "Hi"
+      welcome_text: "Welcome to the Sample App! Click on the link below to activate your account:"
+      activated: "Activate account"
+    subject: "Activated successfully"

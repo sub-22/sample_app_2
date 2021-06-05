@@ -5,9 +5,14 @@ vi:
     error_text: " Đăng Ký Thất Bại"
     login_fail: "Sai tên Email/Mật Khẩu"
     all_user: "Tất cả người dùng"
+    check_activate: "Vui lòng kiểm tra hòm thư để xác nhận"
+    activate_success: "Kích hoạt thành công"
+    activate_danger: "Kích hoạt tài khoản thất bại"
+    not_activate: "Tài khoản chưa được kích hoạt, hãy kiểm tra hòm thư"
     edit:
       message_login_fail: "Hiện chưa có tài khoản đăng nhập"
       update_done: "Thay đổi thành công"
+      update_fail: "Cập nhật thất bại"
     delete:
       user_delete: "Xóa người dùng"
       you_sure: "Bạn có muốn xóa người dùng này"
@@ -112,3 +117,10 @@ vi:
         name: "Tên"
         password: "Mật Khẩu"
         password_confirmation: "Xác nhận mật khẩu"
+  user_mailer:
+    activation:
+      title: "Xác thực tài khoản của bạn"
+      hello_text: "Xin chào"
+      welcome_text: "Chào mừng tới Sample_app, để xác thực tài khoản vui lòng chọn: "
+      activated: "Kích hoạt tài khoản"
+    subject: "Tài khoản đã được kích hoạt"
