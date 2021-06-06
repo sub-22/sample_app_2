@@ -16,6 +16,9 @@ en:
     delete:
       user_delete: "Delete user"
       you_sure: "Are you sure to delete this user"
+    reset_pass:
+      infor_text: "Email sent with password reset instructor"
+      not_found_email: "Email address not found"
   title: "Ruby on Rails Tutorial Sample App"
   sessions:
     new:
@@ -29,6 +32,9 @@ en:
         email: "Email"
         password: "Password"
         remember_me: "Remember me"
+    forgot_pass:
+      forgot_text: "Forget password"
+      submit: "Submit my account"
   layouts:
     application:
       title: "Ruby on Rails Tutorial Sample App"
@@ -123,4 +129,15 @@ en:
       hello_text: "Hi"
       welcome_text: "Welcome to the Sample App! Click on the link below to activate your account:"
       activated: "Activate account"
+    reset_pass:
+      title: "Reset password"
+      text: "To reset your password click the link below"
+      text1: "This link will be expire in two hours"
+      text2: "If you did not request your password to reset, please ignore this email"
+      update_pass: "Update your password"
+      expired: "Password reset has expired"
+      check_empty: "Can't be empty"
+      success_change: "Password has change"
+      reset_fail: "Reset password fail"
     subject: "Activated successfully"
+    subject_reset: "Password reset"
