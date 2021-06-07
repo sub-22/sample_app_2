@@ -36,3 +36,5 @@ users_controller:
 controller:
   sessions:
     remember: "1"
+reset_pass:
+  expired: 2

@@ -16,6 +16,9 @@ vi:
     delete:
       user_delete: "Xóa người dùng"
       you_sure: "Bạn có muốn xóa người dùng này"
+    reset_pass:
+      infor_text: "Gửi email để lấy lại mật khẩu"
+      not_found_email: "Không tìm thấy email"
   title: "Hướng dẫn Rails Sample App"
   sessions:
     new:
@@ -29,6 +32,9 @@ vi:
         email: "Email"
         password: "Mật Khẩu"
         remember_me: "Ghi nhớ tài khoản"
+    forgot_pass:
+      forgot_text: "Quên mật khẩu"
+      submit: "Gửi xác nhận"
   layouts:
     application:
       title: "Hướng dẫn Ruby on Rails Sample App"
@@ -123,4 +129,15 @@ vi:
       hello_text: "Xin chào"
       welcome_text: "Chào mừng tới Sample_app, để xác thực tài khoản vui lòng chọn: "
       activated: "Kích hoạt tài khoản"
+    reset_pass:
+      title: "Lấy lại mật khẩu"
+      text: "Để lấy lại mật khẩu hãy nháy vào link bên dưới"
+      text1: "Link này sẽ hiện hữu trong 2 giờ"
+      text2: "Nếu bạn không muốn lấy lại mật khẩu, xin hãy bỏ qua email này"
+      update_pass: "Cập nhật lại mật khẩu"
+      expired: "Lấy lại mật khẩu lỗi"
+      check_empty: "Mật khẩu không được để trống"
+      success_change: "Thay đổi mật khẩu thành công"
+      reset_fail: "Lấy lại mật khẩu thất bại"
     subject: "Tài khoản đã được kích hoạt"
+    subject_reset: "Lấy lại mật khẩu"
