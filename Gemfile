@@ -19,6 +19,7 @@ gem "faker", "2.1.2"
 gem "kaminari"
 gem "bootstrap-kaminari-views"
 gem "bootstrap-will_paginate", "1.0.0"
+gem "figaro"
 gem "bootsnap", ">= 1.4.4", require: false
 
 group :development, :test do

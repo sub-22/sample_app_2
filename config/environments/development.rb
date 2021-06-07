@@ -72,6 +72,18 @@ Rails.application.configure do
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
 
   config.hosts.clear
+
+  config.action_mailer.delivery_method = :smtp
+  host = "localhost:3000"
+  config.action_mailer.default_url_options = {host: host, protocol: "http"}
+  config.action_mailer.smtp_settings = {
+    user_name: ENV["mailtrap_user_name"],
+    password: ENV["mailtrap_passs"],
+    address: ENV["mailtrap_address"],
+    domain: ENV["mailtrap_domain"],
+    port: ENV["mail_port"],
+    authentication: :cram_md5
+  }
   # Uncomment if you wish to allow Action Cable access from any origin.
   # config.action_cable.disable_request_forgery_protection = true
 end
