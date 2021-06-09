@@ -107,6 +107,7 @@ en:
     noti:
       destroy_true: "Delete successfull"
       destroy_fail: "Delete fail"
+    view_profile: "View my profile"
   shared:
     error_messages:
       text: "The form contain"
@@ -141,3 +142,20 @@ en:
       reset_fail: "Reset password fail"
     subject: "Activated successfully"
     subject_reset: "Password reset"
+  microposts:
+    post_text: "Posted"
+    post_time: "ago."
+    title: "Microposts"
+    count_micropost: "Microposts (%{count})"
+    message:
+      success: "Micropost created success"
+      delete: "Micropost deleted success"
+      delete_err: "Micropost delete error"
+      danger: "Have some wrong"
+    image:
+      message: "Image must to format"
+      size: "Image must to less 10MB"
+    delete: "Delete"
+    confirm_delete: "You sure to delete?"
+    placeholder: "Compose new micropost..."
+    submit: "Post"

@@ -18,8 +18,10 @@ gem "bcrypt", "3.1.13"
 gem "faker", "2.1.2"
 gem "kaminari"
 gem "bootstrap-kaminari-views"
-gem "bootstrap-will_paginate", "1.0.0"
 gem "figaro"
+gem "active_storage_validations", "0.8.2"
+gem "image_processing"
+gem "mini_magick"
 gem "bootsnap", ">= 1.4.4", require: false
 
 group :development, :test do

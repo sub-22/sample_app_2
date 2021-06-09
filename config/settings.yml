@@ -28,7 +28,7 @@ user:
       email: !ruby/regexp '/\A[\w+\-.]+@[a-z\d\-]+(\.[a-z\d\-]+)*\.[a-z]+\z/i'
   edit:
     avatar_path: "http://gravatar.com/emails"
-  size_img: 50
+  size_img: 500
 users_helper:
   size: 80
 users_controller:
@@ -38,3 +38,11 @@ controller:
     remember: "1"
 reset_pass:
   expired: 2
+micropost:
+  validates:
+    content_size: 150
+  img_file: [image/jpeg, image/gif, image/png]
+  img_size: 500
+users_micropost:
+  page: 10
+  megabytes: 10
