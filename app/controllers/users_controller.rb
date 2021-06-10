@@ -8,7 +8,9 @@ class UsersController < ApplicationController
     @users = User.page(params[:page]).per Settings.users_controller.page
   end
 
-  def show; end
+  def show
+    @microposts = @user.microposts.order_post.page(params[:page]).per Settings.users_micropost.page
+  end
 
   def new
     @user = User.new
@@ -59,14 +61,6 @@ class UsersController < ApplicationController
 
   def user_params
     params.require(:user).permit User::USER_PERMIT
-  end
-
-  def logged_in_user
-    return if logged_in?
-
-    store_location
-    flash[:danger] = t "global.edit.message_login_fail"
-    redirect_to login_url
   end
 
   def correct_user

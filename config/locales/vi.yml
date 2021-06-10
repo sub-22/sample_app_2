@@ -17,7 +17,7 @@ vi:
       user_delete: "Xóa người dùng"
       you_sure: "Bạn có muốn xóa người dùng này"
     reset_pass:
-      infor_text: "Gửi email để lấy lại mật khẩu"
+      infor_text: "Kiểm tra email để lấy lại mật khẩu"
       not_found_email: "Không tìm thấy email"
   title: "Hướng dẫn Rails Sample App"
   sessions:
@@ -107,6 +107,7 @@ vi:
     noti:
       destroy_true: "Xóa thành công"
       destroy_fail: "Xóa thất bại"
+    view_profile: "Xem thông tin"
   shared:
     error_messages:
       text: "Biểu mấu có"
@@ -141,3 +142,20 @@ vi:
       reset_fail: "Lấy lại mật khẩu thất bại"
     subject: "Tài khoản đã được kích hoạt"
     subject_reset: "Lấy lại mật khẩu"
+  microposts:
+    post_text: "Bài đăng"
+    post_time: "trước."
+    title: "Bài đăng của tôi"
+    count_micropost: "Bài đăng của tôi (%{count})"
+    message:
+      success: "Bài đăng thành công"
+      delete: "Xóa thành công"
+      delete_err: "Lỗi khi xóa bài đăng"
+      danger: "Đã xảy ra lỗi"
+    image:
+      message: "Hình ảnh phải đúng định dạng"
+      size: "Hình ảnh phải nhỏ hơn 10MB"
+    delete: "Xóa"
+    confirm_delete: "Bạn có muốn xóa?"
+    placeholder: "Nhập bài đăng mới..."
+    submit: "Đăng lên"
