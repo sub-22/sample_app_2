@@ -32,7 +32,7 @@ user:
 users_helper:
   size: 80
 users_controller:
-  page: 3
+  page: 8
 controller:
   sessions:
     remember: "1"
@@ -46,3 +46,7 @@ micropost:
 users_micropost:
   page: 10
   megabytes: 10
+follow:
+  page: 10
+  user:
+    size_img: 500

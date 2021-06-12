@@ -159,3 +159,12 @@ vi:
     confirm_delete: "Bạn có muốn xóa?"
     placeholder: "Nhập bài đăng mới..."
     submit: "Đăng lên"
+  follow:
+    title: "Theo dõi"
+    following: "Đang theo dõi"
+    followers: "Người theo dõi"
+    view_profile: "Xem thông tin"
+    follow_submit: "Theo dõi"
+    unfollow_submit: "Bỏ theo dõi"
+  relationship:
+    danger: "Không tìm thấy người dùng"

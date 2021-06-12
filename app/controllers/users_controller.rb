@@ -51,14 +51,6 @@ class UsersController < ApplicationController
 
   private
 
-  def find_user
-    @user = User.find_by id: params[:id]
-    return if @user
-
-    flash[:danger] = t "global.not_found_user"
-    redirect_to root_path
-  end
-
   def user_params
     params.require(:user).permit User::USER_PERMIT
   end
