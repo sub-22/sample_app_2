@@ -4,8 +4,10 @@ class Micropost < ApplicationRecord
   has_one_attached :image
 
   MICROPOSTS_PERMIT = %i(content image).freeze
+  delegate :name, prefix: true, to: :user
 
   scope :order_post, -> { order created_at: :desc }
+  scope :user_post, -> (ids) { where user_id: ids }
 
   validates :user_id, presence: true
   validates :content, presence: true,

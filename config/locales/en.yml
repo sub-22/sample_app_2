@@ -159,3 +159,12 @@ en:
     confirm_delete: "You sure to delete?"
     placeholder: "Compose new micropost..."
     submit: "Post"
+  follow:
+    title: "Follow"
+    following: "Following"
+    followers: "Followers"
+    view_profile: "View profile"
+    follow_submit: "Follow"
+    unfollow_submit: "Unfollow"
+  relationship:
+    danger: "Not exist user"

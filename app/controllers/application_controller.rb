@@ -5,6 +5,14 @@ class ApplicationController < ActionController::Base
 
   private
 
+  def find_user
+    @user = User.find_by id: params[:id]
+    return if @user
+
+    flash.now[:danger] = t "relationship.danger"
+    redirect_to root_url
+  end
+
   def logged_in_user
     return if logged_in?
 
